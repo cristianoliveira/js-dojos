@@ -1,0 +1,79 @@
+Arguments: 
+  /Users/cristianoliveira/.nvm/versions/node/v14.5.0/bin/node /usr/local/bin/yarn test
+
+PATH: 
+  /Users/cristianoliveira/.nvm/versions/node/v14.5.0/bin:/Users/cristianoliveira/.nvm/versions/node/v14.5.0/bin:/Users/cristianoliveira/.rbenv/shims:/Users/cristianoliveira/.cargo/bin:/Users/cristianoliveira/.rbenv/shims:/Users/cristianoliveira/.rvm/gems/ruby-2.6.3/bin:/Users/cristianoliveira/.rvm/gems/ruby-2.6.3@global/bin:/Users/cristianoliveira/.rvm/rubies/ruby-2.6.3/bin:/Users/cristianoliveira/.nvm/versions/node/v10.14.1/bin:/usr/local/Cellar/node/7.9.0/libexec/npm/bin/:/Users/cristianoliveira/.rbenv/bin:/Users/cristianoliveira/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/cristianoliveira/.rbenv/shims:/Users/cristianoliveira/.cargo/bin:/Users/cristianoliveira/.rvm/gems/ruby-2.6.3/bin:/Users/cristianoliveira/.rvm/gems/ruby-2.6.3@global/bin:/Users/cristianoliveira/.rvm/rubies/ruby-2.6.3/bin:/Users/cristianoliveira/.nvm/v10.14.1/bin:/usr/local/Cellar/node/7.9.0/libexec/npm/bin/:/Users/cristianoliveira/.rbenv/bin:/Users/cristianoliveira/golang//bin:/Users/cristianoliveira/.rvm/bin:/Users/crosa/.multirust/toolchains/stable/cargo/bin:/Users/cristianoliveira/golang//bin:/Users/crosa/.multirust/toolchains/stable/cargo/bin:/Users/cristianoliveira/.rvm/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  14.5.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/cristianoliveira/other/codecjs/package.json: Unexpected token } in JSON at position 1200
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "codecjs",
+    "version": "1.0.0",
+    "description": "Code challenges in javascript",
+    "main": "src/index.js",
+    "engines": {
+      "node": ">=14.0"
+    },
+    "type": "module",
+    "scripts": {
+      "start": "node src/",
+      "lint": "eslint src/**",
+      "pretest": "npm run lint",
+      "test": "jest src",
+      "coverage": "jest --collectCoverageFrom=src/**.js --coverage src"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/cristianoliveira/codecjs.git"
+    },
+    "keywords": [
+      "Code",
+      "Katas",
+      "JS"
+    ],
+    "author": "Cristian Olviera",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/cristianoliveira/codecjs/issues"
+    },
+    "homepage": "https://github.com/cristianoliveira/codecjs#readme",
+    "devDependencies": {
+      "eslint": "^5.16.0",
+      "eslint-config-standard": "^12.0.0",
+      "eslint-plugin-import": "^2.20.2",
+      "eslint-plugin-jest": "^22.21.0",
+      "eslint-plugin-node": "^8.0.1",
+      "eslint-plugin-promise": "^4.2.1",
+      "eslint-plugin-standard": "^4.0.1",
+      "eslint-config-prettier": "^2.9.0",
+      "eslint-formatter-pretty": "^1.3.0",
+      "prettier": "1.11.1",
+      "jest": "^24.9.0"
+    },
+    "jest": {
+      "verbose": true
+    }
+  }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
