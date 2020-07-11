@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node src/",
     "lint": "eslint src/**",
-    "test": "jest src",
+    "test": "jest",
     "coverage": "jest --collectCoverageFrom=src/**.js --coverage src"
   },
   "repository": {
